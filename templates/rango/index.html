@@ -11,7 +11,7 @@
 		<div> hey there partner! </div>
 		
 		<div>
-			<h1>Most Liked Lategories</h1>
+			<h1>Most Liked Categories</h1>
 			{% if categories %}
 			<ul>
 				{% for category in categories %}
@@ -28,7 +28,7 @@
 			{% if pages %}
 			<ul>
 				{% for page in pages %}
-				<li>{{ page.name }}</li>
+				<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 				{% endfor %}
 			</ul>
 			{% else %}
